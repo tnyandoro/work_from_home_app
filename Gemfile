@@ -25,9 +25,12 @@ gem 'jbuilder', '~> 2.7'
 # devise
 gem 'devise'
 
-
+# image uploads
+gem 'carrierwave'
+gem 'cloudinary'
 
 # Use Active Storage variant
+gem 'activestorage', '~> 6.1', '>= 6.1.1'
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
