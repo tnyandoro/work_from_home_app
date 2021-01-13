@@ -5,6 +5,16 @@
   <%= @group.name %>
 </p>
 
+<%
+=begin%>
+
+<p>
+ <% if @group.icon.attached? %>
+   <image src ="<%= (url_for(@user.icon))%>">
+<% end %>
+</p>
+<%
+=end%>
 <p>
   <strong>Icon:</strong>
   <%= @group.icon %>
