@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>WorkFromApp</title>
+  <head>    
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%= content_for(:title) ?yeild(:title) : "Template" %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+    <header>   
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main center">
+     <div class="container justify-content-between rounded  center ">
+         
+         <%= yield %>
+     </div>
+    </main>       
   </body>
 </html>
