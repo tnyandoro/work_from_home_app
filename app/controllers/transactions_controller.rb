@@ -68,8 +68,9 @@ class TransactionsController < ApplicationController
       @transaction = Transaction.find(params[:id])
     end
 
+  private
     # Only allow a list of trusted parameters through.
     def transaction_params
-      params.require(:transaction).permit(:name, :user_id)
+      params.require(:transaction).permit(:name, :amount, :group_id)
     end
 end

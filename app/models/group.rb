@@ -1,4 +1,5 @@
 class Group < ApplicationRecord
+  mount_uploader :icon, ImageUploader
 
   has_one_attached :icon
   validates :name, presence: true
@@ -8,4 +9,7 @@ class Group < ApplicationRecord
 
   validates :icon, presence: true
 
+  def self.find_by_first_letter(letter)
+    where('name LIKE ?', "#{letter}%").order('name ASC')
+  end
 end
