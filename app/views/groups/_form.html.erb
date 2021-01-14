@@ -19,10 +19,10 @@
   <div class="field">
     <%= form.label :icon, "Attach a New Icon"  %>
     <%= form.hidden_field :icon_cache %>
-    <%= form.file_field :icon %>
+    <%= form.file_field :icon, class: 'form-control', direct_upload: true %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit%>
   </div>
 <% end %>

@@ -1,10 +1,11 @@
 class TransactionsController < ApplicationController
-  before_action :set_transaction, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /transactions
   # GET /transactions.json
   def index
-    @transactions = Transaction.all
+    # @transactions = Transaction.all
+    if params[:view]
   end
 
   # GET /transactions/1
