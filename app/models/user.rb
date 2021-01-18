@@ -6,5 +6,7 @@ class User < ApplicationRecord
   validates :name, presence: true
 
   has_many :transactions, class_name: 'Transaction', foreign_key: 'user_id'
-  has_many :groups, class_name: 'Group', foreign_key: 'user_id'
+  has_many :groups
+
+  
 end

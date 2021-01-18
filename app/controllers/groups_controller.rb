@@ -10,6 +10,7 @@ class GroupsController < ApplicationController
   # GET /groups/1
   # GET /groups/1.json
   def show
+    @group = Group.find(params[:id])
   end
 
   # GET /groups/new
@@ -19,13 +20,14 @@ class GroupsController < ApplicationController
 
   # GET /groups/1/edit
   def edit
+    @group = Group.find(params[:id])
   end
 
   # POST /groups
   # POST /groups.json
   def create
     @group = Group.new(group_params)
-    @group.user = current_user.name
+    @group.user = current_user
 
     respond_to do |format|
       if @group.save
@@ -57,7 +59,7 @@ class GroupsController < ApplicationController
   def destroy
     @group.destroy
     respond_to do |format|
-      format.html { redirect_to groups_url, notice: 'Group was successfully destroyed.' }
+      format.html { redirect_to root_path, notice: 'Group was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

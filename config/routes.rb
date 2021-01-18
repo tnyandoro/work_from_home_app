@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
 
-  # resources :users, only: %i[index]
+  resources :users, only: %i[index]
   resources :transactions
  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

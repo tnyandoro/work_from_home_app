@@ -12,7 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+  <div class="controls">
+        <%= form.label :name, "Select a Group" %>
+        <%= form.select :group, [['House','house'],['Car','Car'],['College','College'],['Holiday','Holiday'],['Business','Busines']] %>
+  </div>  
+    <%= form.label :name, "Create a New Group" %>
     <%= form.text_field :name %>
   </div>
 
