@@ -95,6 +95,7 @@ GEM
       rest-client
     coderay (1.1.3)
     concurrent-ruby (1.1.7)
+    content_disposition (1.0.0)
     crass (1.0.6)
     debug_inspector (1.0.0)
     devise (4.7.3)
@@ -106,6 +107,8 @@ GEM
     diff-lcs (1.4.4)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
+    down (5.2.0)
+      addressable (~> 2.5)
     erubi (1.10.0)
     factory_bot (5.2.0)
       activesupport (>= 4.2.0)
@@ -238,6 +241,9 @@ GEM
       sprockets-rails
       tilt
     semantic_range (2.3.1)
+    shrine (3.3.0)
+      content_disposition (~> 1.0)
+      down (~> 5.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -293,6 +299,7 @@ DEPENDENCIES
   devise
   factory_bot_rails (~> 5.1)
   hirb
+  image_processing (~> 1.12, >= 1.12.1)
   jbuilder (~> 2.7)
   pg
   puma (~> 5.0)
@@ -300,6 +307,7 @@ DEPENDENCIES
   rails (~> 6.1.0)
   rspec-rails (~> 3.8, >= 3.8.2)
   sass-rails (>= 6)
+  shrine (~> 3.3)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)

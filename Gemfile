@@ -33,6 +33,9 @@ gem 'cloudinary'
 gem 'activestorage', '~> 6.1', '>= 6.1.1'
 # gem 'image_processing', '~> 1.2'
 
+gem 'shrine', '~> 3.3'
+gem 'image_processing', '~> 1.12', '>= 1.12.1'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'hirb'

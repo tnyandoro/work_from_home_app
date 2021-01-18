@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  resources :groups
+
   root to: 'transactions#index'
 
   devise_for :users, controllers: {
     sessions: 'users/sessions'
   }
 
+  resources :groups
   resources :users, only: %i[index]
   resources :transactions
  
