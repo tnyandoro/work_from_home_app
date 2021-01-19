@@ -29,6 +29,9 @@ gem 'devise'
 gem 'carrierwave'
 gem 'cloudinary'
 
+# A configurable and documented Rails view helper for adding gravatars into your Rails application.
+gem 'gravatar_image_tag', '~> 1.2'
+
 # Use Active Storage variant
 gem 'activestorage', '~> 6.1', '>= 6.1.1'
 # gem 'image_processing', '~> 1.2'

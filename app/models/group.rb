@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
-  mount_uploader :icon, ImageUploader
+  mount_uploader :icon, IconUploader
 
   has_one_attached :icon
   validates :name, presence: true

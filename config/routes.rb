@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
 
-  resources :groups
+  resources :groups, only: %i[index new create show edit update]
   resources :users, only: %i[index]
   resources :transactions
  
