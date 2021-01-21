@@ -95,6 +95,14 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
+  Work_from_home_app::Application.configure do
+    ...
+  
+    # set the relative root, because we're deploying to /myrailsapp
+    config.action_controller.relative_url_root  = "/work_from_home_app"
+    RAILS_ENV=production bundle exec rake assets:precompile RAILS_RELATIVE_URL_ROOT=/Work_from_app
+    ...
+  end
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
