@@ -4,13 +4,13 @@
 
 <div class='center'>
   <div class=' text-light d-flex justify-content-between rounded col-12 col-md-5 center mb-5 shadow-sm bg-white'>
-    <p class ="mt-3"><small>All Transactions With Group.</small><p>
-    <p class ="mt-3"><small>Total Expence:</small> $<%= @trana.sum(:amount) %></p>
+    <p class ="mt-3 pf"><small>All Transactions With Group.</small><p>
+    <p class ="mt-3 pf"><small>Total Expence:</small> $<%= @trana.sum(:amount) %></p>
   </div>
 
   <% @trana.each do |t| %>
      <%= link_to transaction_path(t.id) do %> 
-       <div class="card mb-3 center custom-bg " style="max-width: 540px;">
+       <div class="card mb-3 center custom-bg pf " style="max-width: 540px;">
         <div class="row">
           <div class="col-3">
             <img src="<%=t.group.icon%>" class="icon" alt="">

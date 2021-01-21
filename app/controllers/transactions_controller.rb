@@ -1,9 +1,10 @@
 class TransactionsController < ApplicationController
-  before_action :set_transaction, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /transactions
   # GET /transactions.json
   def index
+<<<<<<< HEAD
     if params[:view]
       @trana = Transaction.with_group(current_user.id).ordered_by_most_recent
       render 'page1'
@@ -12,6 +13,10 @@ class TransactionsController < ApplicationController
       render 'page2'
 
     end
+=======
+    # @transactions = Transaction.all
+    if params[:view]
+>>>>>>> 9dcb1cde127e6a10a9f6192938aa897aa92f8196
   end
 
   # GET /transactions/1
