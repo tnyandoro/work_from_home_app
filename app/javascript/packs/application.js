@@ -8,10 +8,10 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import 'jquery-ujs';
-import "@fortawesome/fontawesome-free/js/all";
+i
 
 // stylesheets
-require("../stylesheets/main.scss")
+require("../stylesheets/custom.scss")
 
 Rails.start()
 Turbolinks.start()

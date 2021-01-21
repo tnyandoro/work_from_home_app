@@ -47,7 +47,10 @@ body {
   font-size: 1.3em;
   color: #000000;
 }
-
+.tiny{
+  font-size: 9px;
+  color: #red;
+}
 #page-content {
   flex: 1 0 auto;
   background-color: $primary-color-light;

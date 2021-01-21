@@ -5,7 +5,7 @@ class Group < ApplicationRecord
   validates :name, presence: true
 
   belongs_to :user
-  has_many :transactions, :through => :groups
+  has_many :transactions
 
   validates :icon, presence: true
 
