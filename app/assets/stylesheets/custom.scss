@@ -35,6 +35,10 @@ body {
   letter-spacing: -1px;
   font-weight: bold;
 }
+.title{
+  color: #ffffff;
+  background-color: $primary-color;
+}
 
 #logo:hover {
   text-decoration: none;
@@ -69,6 +73,8 @@ body {
 .custom-bg2 {
   background-color: $primary-color !important;
   border-radius: 10%;
+  border: 1px solid #989DA3;
+  
 }
 
 .custom-bg3 {
@@ -120,6 +126,6 @@ form {
 .transition {
   &:hover {
     transform: scale(1.1, 1.1);
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px white;
   }
 }
