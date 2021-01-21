@@ -8,7 +8,7 @@ class TransactionsController < ApplicationController
       @trana = Transaction.with_group(current_user.id).ordered_by_most_recent
       render 'page1'
     else
-      @tranb = Transaction.with_group(current_user.id).ordered_by_most_recent
+      @tranb = Transaction.without_group(current_user.id).ordered_by_most_recent
       render 'page2'
 
     end
@@ -33,8 +33,7 @@ class TransactionsController < ApplicationController
   # POST /transactions
   # POST /transactions.json
   def create
-    @transaction = Transaction.new(transaction_param)
-    @transaction.user_id = current_user.id
+    @transaction = current_user.transactions.build(transaction_params)
     if @transaction.save
       redirect_to root_path, notice: 'New transaction was successfully created.'
     else

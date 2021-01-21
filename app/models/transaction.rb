@@ -2,7 +2,7 @@ class Transaction < ApplicationRecord
   validates :name, presence: true
   validates :amount, presence:true
 
-  belongs_to :user, class_name: 'User'
+  belongs_to :author, class_name: 'User'
   belongs_to :group, optional: true
 
   scope :without_group, ->(author_id) { where('group_id IS NULL and author_id=?', author_id) }

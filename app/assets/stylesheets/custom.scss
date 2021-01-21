@@ -54,6 +54,7 @@ body {
 .btn-primary {
   width: 100%;
   background-color: $btn-color !important;
+  border-radius: 5px solid white;
 }
 
 .custom-bg {
@@ -63,6 +64,7 @@ body {
 
 .custom-bg2 {
   background-color: $primary-color !important;
+  border-radius: 10%;
 }
 
 .custom-bg3 {
@@ -108,7 +110,7 @@ form {
 }
 
 .jumbotron {
-  margin: 50px;
+  margin: 2em;
 }
 
 .transition {
