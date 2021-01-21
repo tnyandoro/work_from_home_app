@@ -3,11 +3,12 @@
 <p>
   <strong>Name:</strong>
   <%= @transaction.name %>
+   <%= @tgroup.icon %>
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @transaction.user_id %>
+  <strong>Author:</strong>
+  <%= @transaction.author_id %>
 </p>
 
 <%= link_to 'Edit', edit_transaction_path(@transaction) %> |
