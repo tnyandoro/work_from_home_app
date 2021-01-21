@@ -18,12 +18,7 @@
 
     <div class="field">
       <%=form.label :select_group %>   
-      <%
-=begin%>
- <%=select("transaction", "group_id", Group.all.collect {|g|[g.name, g.id] }, { include_blank: true })%> 
-<%
-=end%>
-      <%= f.select :group_id, Group.all.collect(:transaction),:id,:name, include_blank: true %>
+      <%=select("transaction", "group_id", Group.all.collect {|g|[g.name, g.id] }, { include_blank: true })%>
     </div>
 
     <div class="field">
