@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddToTransactions < ActiveRecord::Migration[6.1]
   def change
     add_reference :transactions, :author, references: :users, index: true

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Group < ApplicationRecord
   mount_uploader :icon, IconUploader
 
@@ -12,5 +14,4 @@ class Group < ApplicationRecord
   def self.find_by_first_letter(letter)
     where('name LIKE ?', "#{letter}%").order('name ASC')
   end
-
 end

@@ -10,18 +10,18 @@
 
   <% @trana.each do |t| %>
      <%= link_to transaction_path(t.id) do %> 
-       <div class="card mb-3 center custom-bg pf " style="max-width: 540px;">
+       <div class="card mb-3 center custom-bg2 pf " style="max-width: 540px;">
         <div class="row">
           <div class="col-3">
             <img src="<%=t.group.icon%>" class="icon" alt="">
           </div>
           <div class="col-8">
-            <div class="card-body">
+            <div class="card-body custom-custom-bg2">
               <div class = "d-flex justify-content-between">
-                <h5 class="card-title"><%= t.name %></h5>  
+                <h5 class="card-title text-danger"><%= t.name %></h5>  
                 <p class="card-text">$<%= t.amount %></p>
               </div>          
-              <p class="card-text d-flex justify-content-start"><small class="text-muted"><%=t.created_at.strftime("%b %d, %Y")%></small></p>      
+              <p class="card-text d-flex justify-content-start"><small class="text-danger"><%=t.created_at.strftime("%b %d, %Y")%></small></p>      
             </div>
           </div>
         </div>
@@ -29,4 +29,4 @@
      <%end%>   
   <%end%>
 
-  <%= link_to "Back", :back, :class => 'btn btn-primary col-12 col-md-4 center font-weight-bold'%>
+  <%= link_to "Back", :back, :class => 'btn btn-primary col-12 col-md-4 center font-weight-bold text-light'%>

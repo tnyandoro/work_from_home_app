@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class TransactionsController < ApplicationController
   before_action :authenticate_user!
 
@@ -64,8 +66,6 @@ class TransactionsController < ApplicationController
   def set_transaction
     @transaction = Transaction.find(params[:id])
   end
-
-  private
 
   # Only allow a list of trusted parameters through.
   def transaction_params
