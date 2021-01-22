@@ -10,8 +10,8 @@
 
 ## Built With
 
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
+- Ruby v2.7.2
+- Ruby on Rails v6.2.4
 
 ## Live Demo
 
@@ -19,9 +19,9 @@
 
 ### Prerequisites
 
-Ruby: 2.6.3
+Ruby: 2.7.2
 Rails: 5.2.3
-Postgres: >=9.5
+Postgres: >=13
 
 ## Getting Started
 
@@ -60,11 +60,6 @@ Setup database with:
 
 
 ## Authors
-
-👤 **Alaukik**
-
-- Github: [@newhorizon-tech](https://github.com/newhorizon-tech)
-- Twitter: [@techintosh3](https://twitter.com/techintosh3)
 
 👤 **Tendai Nyandoro**
 
