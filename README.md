@@ -1,6 +1,6 @@
-# Friend app with Ruby on Rails
+# Work From Home app with Ruby on Rails
 
-> This is a Social app that allows users to create posts, reply with comments, send a friend request, accept a friend request and see what their friends are posting.
+> This is a Social app that allows users to create groups, make transactions towards saving for a goal for the entire family and/or can also make a personal transaction.
 
 
 ![Timeline](./img/screenshot-1.png)
@@ -28,8 +28,8 @@ Postgres: >=13
 To get a local copy up and running follow these simple example steps.
 1. Open Terminal.
 2. Navigate to your desired location to download the contents of this repository.
-3. Clone this repository: ```git clone https://github.com/newhorizon-tech/ror-social-scaffold```
-4. Run ```cd private-events```.
+3. Clone this repository: ```https://github.com/tnyandoro/work_from_home_app```
+4. Run ```cd work_from_home_app```.
 
 ### Setup
 
@@ -71,7 +71,7 @@ Setup database with:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/newhorizon-tech/ror-social-scaffold/issues/).
+Feel free to check the [issues page](https://github.com/tnyandoro/work_from_home_app/issues/).
 
 ## Show your support
 
