@@ -337,7 +337,7 @@ DEPENDENCIES
   pg
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
-  rails (~> 6.1.0)
+  rails
   rspec-rails (~> 4.0, >= 4.0.2)
   rubocop (~> 1.8, >= 1.8.1)
   sass-rails (>= 6)
@@ -347,6 +347,7 @@ DEPENDENCIES
   simplecov
   turbolinks (~> 5)
   tzinfo-data
+  wdm
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.0)

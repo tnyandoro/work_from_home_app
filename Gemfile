@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.7.2'
+ruby '>=2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.1.0'
-
+gem 'rails'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -42,6 +42,9 @@ gem 'shrine', '~> 3.3'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'hirb'
 gem 'rubocop', '~> 1.8', '>= 1.8.1'
+platforms :mswin do
+  gem "wdm", :group => [:development, :test]
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -63,7 +66,6 @@ group :development do
   # Use postgresql as the database for Active Record
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'binding_of_caller'
-  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

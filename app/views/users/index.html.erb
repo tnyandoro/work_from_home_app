@@ -4,16 +4,16 @@
 
 <div class=" center py-5 shadow-lg rounded col-12 col-md-6  custom-bg">
 
-      <div class='center py-2 mb-2 mx-2 transition  rounded bg-success'>
+      <div class='center py-2 mb-2 mx-2 transition   bg-success'>
         <button class = 'btn btn-success btn-lg text-light bg-success'><%= link_to 'All  My Transactions', transactions_path(view: true), :class => 'text-light'%></button>
       </div>
     <%= link_to transactions_path, :class => 'text-light' do %>
-      <div class='center py-2 mb-2 mx-2 transition  rounded bg-success'>
+      <div class='center py-2 mb-2 mx-2 transition   bg-success'>
         <button class = 'btn btn-success btn-lg text-light'>All my external transactions</button>
       </div>
     <%end%>
      <%= link_to groups_path, :class => 'text-light' do %>
-      <div class='center py-2 mb-2 mx-2 transition rounded bg-success'>
+      <div class='center py-2 mb-2 mx-2 transition  bg-success'>
         <button class = 'btn btn-success btn-lg text-light'>All Groups</button>
       </div>
     <%end%>
