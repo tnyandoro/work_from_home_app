@@ -1,6 +1,6 @@
 # Work From Home app with Ruby on Rails
 
-> This is a Social app that allows users to create groups, make transactions towards saving for a goal for the entire family and/or can also make a personal transaction.
+> This is a Savings Transaction app that allows users to create groups, make transactions towards saving for a goal for the entire family and/or can also make a personal transaction.
 
 
 ![Timeline](./img/screenshot-1.png)

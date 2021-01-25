@@ -1,17 +1,13 @@
 # frozen_string_literal: true
 
-require 'rails_helper'
+require 'capybara/rails'
 
 RSpec.describe User, type: :model do
-  context 'validation tests' do
-    it 'ensures name is present' do
-      user = User.new(name: 'Name', email: 'test@email.com').save
-      expect(user).to eq(false)
-    end
-
-    it 'ensures email is present' do
-      user = User.new(email: 'test@email.com').save
-      expect(user).to eq(false)
-    end
+  context 'User validation tests' do
+    it { should validate_presence_of(:name)}
+  end
+  context 'User association tests' do
+    it { should have_many(:transactions)}
+    it { should have_many(:groups)}
   end
 end
