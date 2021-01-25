@@ -11,6 +11,9 @@ Bundler.require(*Rails.groups)
 module WorkFromApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    # config/application.rb
+    config.assets.initialize_on_precompile = false
+
     config.load_defaults 6.1
 
     # Configuration for the application, engines, and railties goes here.
@@ -21,4 +24,5 @@ module WorkFromApp
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
   end
+
 end
