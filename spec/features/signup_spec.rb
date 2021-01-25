@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Sign up Succssfully', type: :feature do
+RSpec.describe 'Sign up Successfully', type: :feature do
   it 'Creates a new transaction' do
     visit '/users/sign_up'
     fill_in 'Name', with: 'Tendai'

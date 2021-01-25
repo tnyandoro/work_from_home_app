@@ -43,7 +43,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'hirb'
 gem 'rubocop', '~> 1.8', '>= 1.8.1'
 platforms :mswin do
-  gem "wdm", :group => [:development, :test]
+  gem 'wdm', :group => [:development, :test]
 end
 
 group :development, :test do
