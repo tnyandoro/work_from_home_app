@@ -18,17 +18,24 @@
 ## Built With
 
 - Ruby v2.7.2
-- Ruby on Rails v6.2.4
+- Ruby on Rails v6.1.1
+- Psql (13.1 (Ubuntu 13.1-1.pgdg20.04+1))
 
 ## Live Demo
 
-[Link](https://work-from-home-app.herokuapp.com//)
+[Link](https://work-from-home-app.herokuapp.com/)/)
 
 ### Prerequisites
 
 Ruby: 2.7.2
 Rails: 5.2.3
 Postgres: >=13
+
+## Tested Using
+
+- Rspec
+- Capybara
+- Shoulda-Matchers
 
 ## Getting Started
 
