@@ -62,7 +62,7 @@ Setup database with:
 - Navigate to the root directory of the project
 - Run `rails server`
 - Open a browser and visit `127.0.0.1:3000`
-- Sign up and create transactions!
+- Sign up and a create transactions with or without a group!
 
 ## Testing
 
