@@ -6,7 +6,7 @@
 
 |Profile Page|Transactions Page
 |-|-|
-|![transact_1](https://user-images.githubusercontent.com/30318155/105916032-106e5280-6039-11eb-8e29-6f80fc3e6969.png)|![transact_2](https://user-images.githubusercontent.com/30318155/105916131-33990200-6039-11eb-9eaa-07750fb08a34.png)
+|![transact_1](https://user-images.githubusercontent.com/30318155/105916032-106e5280-6039-11eb-8e29-6f80fc3e6969.png)|![transact_2](https://user-images.githubusercontent.com/30318155/105917396-ec137580-603a-11eb-86b4-68cba9f8ceef.png)
 |Groups Page|Group Details|
 |![](https://user-images.githubusercontent.com/30318155/105916220-47446880-6039-11eb-9923-32f936ca2ab7.png)|![group_detail](https://user-images.githubusercontent.com/30318155/105916488-a6a27880-6039-11eb-86b0-d0da965b6743.png)
 
