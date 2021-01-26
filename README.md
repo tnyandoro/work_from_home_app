@@ -6,13 +6,9 @@
 
 |Profile Page|Transactions Page
 |-|-|
-|![]()|![]()
+|![transact_1](https://user-images.githubusercontent.com/30318155/105916032-106e5280-6039-11eb-8e29-6f80fc3e6969.png)|![transact_2](https://user-images.githubusercontent.com/30318155/105916131-33990200-6039-11eb-9eaa-07750fb08a34.png)
 |Groups Page|Group Details|
-|![]()|![]()
-
-![Timeline](./img/screenshot-1.png)
-
-![Notifications](./img/screenshot-2.png)
+|![](https://user-images.githubusercontent.com/30318155/105916220-47446880-6039-11eb-9923-32f936ca2ab7.png)|![group_detail](https://user-images.githubusercontent.com/30318155/105916488-a6a27880-6039-11eb-86b0-d0da965b6743.png)
 
 
 ## Built With
@@ -47,7 +43,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-Instal gems with:
+Install gems with:
 
 ```
 bundle install
@@ -66,7 +62,7 @@ Setup database with:
 - Navigate to the root directory of the project
 - Run `rails server`
 - Open a browser and visit `127.0.0.1:3000`
-- Sign in and create events!
+- Sign up and create transactions!
 
 ## Testing
 
@@ -93,8 +89,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- The Odin Project
-- The Rails Guides
+- The UI Design credit goes to [Gregoire Vella at www.behance.net](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+- This project was inspired by the [Microverse](https:www.microverse.org) program
+
 
 ## 📝 License
 
