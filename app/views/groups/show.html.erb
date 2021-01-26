@@ -1,4 +1,4 @@
- <div class="center">
+ <div class="center mt-3">
     <div class='custom-bg2 d-flex justify-content-around rounded col-12 col-md-6 center mb-3 shadow-sm text-light'>
       <h4 class ="mt-4 text-light font-weight-bold"><%= "Group Name: #{@group.name}" %></h4>
       <img src="<%= @group.icon%>" class="icon mb-2" alt="">
@@ -18,6 +18,6 @@
         </div>
       <%end%>
     </ul>
-    <p class="center mt-1"><%= link_to "Edit group details", edit_group_path(@group), :class => ' text-dark font-weight-bold'%></p>
+    <p class="center mt-1"><%= link_to "Edit group details", edit_group_path(@group), :class => 'btn  col-12 col-md-4 center mb-4 custom-bg2 text-white '%></p>
  </div>
- <%= link_to "Back", :back, :class => 'text-primary text-white' %>
+ <%= link_to "Back", :back, :class => 'btn btn-primary col-12 col-md-4 center font-weight-bold text-white' %>
