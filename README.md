@@ -1,7 +1,14 @@
 # Work From Home app with Ruby on Rails
 
-> Group our Savings Transaction app is a web application that allows family members to create groups, make transactions towards saving for a goal for the entire family and/or can also make a personal transaction.
+> Group our Savings Transaction app is a web application that allows family members to create groups, make transactions towards saving for a goal for the entire family and/or can also make a personal transaction. Each transaction can belong to a group or it can be independent thus known as an external transaction. This is SITE is responsive.
 
+### Screenshots
+
+|Profile Page|Transactions Page
+|-|-|
+|![]()|![]()
+|Groups Page|Group Details|
+|![]()|![]()
 
 ![Timeline](./img/screenshot-1.png)
 
