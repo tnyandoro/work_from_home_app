@@ -22,5 +22,5 @@ require("channels");
 //= require popper
 //= require bootstrap-sprockets
 import "bootstrap";
-import ".../../stylesheets/application.scss";
+import ".../stylesheets/application.scss";
 global.$ = jQuery;
