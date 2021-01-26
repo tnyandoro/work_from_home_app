@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 ruby '>=2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails'
 gem 'pg'
+gem 'rails'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -43,18 +43,17 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'hirb'
 gem 'rubocop', '~> 1.8', '>= 1.8.1'
 platforms :mswin do
-  gem 'wdm', :group => [:development, :test]
+  gem 'wdm', group: %i[development test]
 end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '~> 3.29'
-  gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'
   gem 'rspec-rails', '~> 4.0', '>= 4.0.2'
+  gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'
   gem 'shoulda-matchers', '~> 4.5', '>= 4.5.1'
   gem 'webdrivers'
-
 end
 
 group :development do

@@ -34,7 +34,6 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
-
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
@@ -98,7 +97,6 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # require "syslog/logger"
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
-
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
