@@ -10,7 +10,7 @@ import "channels"
 import 'jquery-ujs';
 
 import 'bootstrap'
-import '../stylesheets/custom'
+import '../stylesheets/custom.css.scss'
 
 // stylesheets
 require("../stylesheets/custom.css.scss")
