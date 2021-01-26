@@ -1,16 +1,15 @@
-<div class='action d-flex mb-3'>
-  <%= link_to 'Add new transaction', new_transaction_path, :class => 'center btn btn-primary btn-lg col-12 col-md-5 font-weight-bold' %> 
-</div>
-
-<div class='center'>
-  <div class=' text-light d-flex justify-content-between rounded col-12 col-md-5 center mb-5 shadow-sm bg-white'>
-    <p class ="mt-3 pf"><small>All Transactions With Group.</small><p>
-    <p class ="mt-3 pf"><small>Total Expence:</small> $<%= @trana.sum(:amount) %></p>
+<div class='center mt-3'>
+  <button class='btn btn-primary col-12 col-md-4 center font-weight-bold text-light'>
+    <p class ="mt-3 "><h5>All My Transactions.</h5><p>
+  </button>
+  <div class= "d-flex justify-content-between rounded col-12 col-md-5 center mb-5 shadow-sm bg-white pt-2 mt-3">
+      <p class ="mt-3"><h4>Total Expence:</h4><h3><strong>$<%= @trana.sum(:amount) %></strong></h3></p>
   </div>
+</div>
 
   <% @trana.each do |t| %>
      <%= link_to transaction_path(t.id) do %> 
-       <div class="card mb-3 center custom-bg2 pf " style="max-width: 540px;">
+       <div class="card mb-3 center custom-bg pf rounded " style="max-width: 540px;">
         <div class="row">
           <div class="col-3">
             <img src="<%=t.group.icon%>" class="icon" alt="">
@@ -18,15 +17,19 @@
           <div class="col-8">
             <div class="card-body custom-custom-bg2">
               <div class = "d-flex justify-content-between">
-                <h5 class="card-title text-danger"><%= t.name %></h5>  
-                <p class="card-text">$<%= t.amount %></p>
+                <h5 class="card-title text-white"><%= t.name %></h5>
+                <p class="card-text"><h4>$<%= t.amount %></h4></p>
               </div>          
-              <p class="card-text d-flex justify-content-start"><small class="text-danger"><%=t.created_at.strftime("%b %d, %Y")%></small></p>      
+              <p class="card-text d-flex justify-content-start"><small class="text-white"><%=t.created_at.strftime("%b %d, %Y")%></small></p>
             </div>
           </div>
         </div>
       </div> 
      <%end%>   
   <%end%>
+
+<div class='action d-flex mb-3'>
+  <%= link_to 'Add new transaction', new_transaction_path, :class => 'center btn custom-bg2 btn-lg col-12 col-md-5 font-weight-bold text-white'%>
+</div>
 
   <%= link_to "Back", :back, :class => 'btn btn-primary col-12 col-md-4 center font-weight-bold text-light'%>

@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Link](https://frozen-everglades-42625.herokuapp.com/)
+[Link](https://work-from-home-app.herokuapp.com//)
 
 ### Prerequisites
 

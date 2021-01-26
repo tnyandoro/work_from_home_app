@@ -84,6 +84,13 @@ body {
   background-color: $divider-color;
 }
 
+.custom-bg4 {
+  background-color: $primary-color !important;
+  border-radius: 10%;
+  border: 1px solid #ffffff;
+
+}
+
 .icon {
   height: 80px;
   width: 70px;
