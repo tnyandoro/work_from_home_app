@@ -10,10 +10,9 @@ import "channels"
 import 'jquery-ujs';
 
 import 'bootstrap'
-import '../stylesheets/custom.css.scss'
+import '../../assets/stylesheets/custom.scss'
 
-// stylesheets
-require("../stylesheets/custom.css.scss")
+
 
 Rails.start()
 Turbolinks.start()
