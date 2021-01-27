@@ -4,7 +4,7 @@
 
 ### Screenshots
 
-|Profile Page|Transactions Page
+|Profile Page|Transactions Page|Transaction details|
 |-|-|-|
 |-|-|-|
 |![Home Page](https://user-images.githubusercontent.com/30318155/106055820-93a1ae00-60f6-11eb-9a4a-7e8486e898a7.png)|![All My Transactions](https://user-images.githubusercontent.com/30318155/106055949-bf249880-60f6-11eb-94e2-0440fd876fc9.png)|![trans_details](https://user-images.githubusercontent.com/30318155/106056131-fd21bc80-60f6-11eb-917b-19f817c43bcd.png)
