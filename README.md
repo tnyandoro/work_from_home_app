@@ -5,8 +5,8 @@
 ### Screenshots
 
 |Profile Page|Transactions Page
-|-|-|
-|![transact_1](https://user-images.githubusercontent.com/30318155/105916032-106e5280-6039-11eb-8e29-6f80fc3e6969.png)|![transact_2](https://user-images.githubusercontent.com/30318155/105917396-ec137580-603a-11eb-86b4-68cba9f8ceef.png)
+|-|-|-|
+|![Home Page](https://user-images.githubusercontent.com/30318155/106055820-93a1ae00-60f6-11eb-9a4a-7e8486e898a7.png)|![All My Transactions](https://user-images.githubusercontent.com/30318155/106055949-bf249880-60f6-11eb-94e2-0440fd876fc9.png)
 |Groups Page|Group Details|
 |![](https://user-images.githubusercontent.com/30318155/105916220-47446880-6039-11eb-9923-32f936ca2ab7.png)|![group_detail](https://user-images.githubusercontent.com/30318155/105916488-a6a27880-6039-11eb-86b0-d0da965b6743.png)
 
