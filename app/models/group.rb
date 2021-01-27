@@ -7,7 +7,7 @@ class Group < ApplicationRecord
   validates :name, presence: true
 
   belongs_to :user
-  has_many :transactions
+  has_many :transactions, -> { order(:created_at) }
 
   validates :icon, presence: true
 

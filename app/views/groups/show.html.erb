@@ -19,5 +19,6 @@
       <%end%>
     </ul>
     <p class="center mt-1"><%= link_to "Edit group details", edit_group_path(@group), :class => 'btn  col-12 col-md-4 center mb-4 custom-bg2 text-white '%></p>
+    <p class="center mt-1"><%= link_to "Delete", group_path(@group), method: :delete, data: { confirm: 'deleting this will compromise the entire group are you sure?'}, :class => 'btn btn-danger btn  col-12 col-md-4 center mb-4 text-white  font-weight-bold'%></p>
  </div>
  <%= link_to "Back", :back, :class => 'btn btn-primary col-12 col-md-4 center font-weight-bold text-white' %>
