@@ -1,8 +1,8 @@
-<div class='custom-bg2 text-light d-flex justify-content-between rounded col-12 col-md-6 center mb-5 mt-3 shadow-sm bg-white'>
-  <h1 class="center my-3">New group</h1>
+<div class='custom-bg4 text-light d-flex justify-content-between rounded col-12 col-md-6 center mb-5 mt-5 shadow-sm bg-white'>
+  <h1 class="center my-3 mt-3">New group</h1>
 </div>
 
- <div class="bg-danger text-light mt-1 center rounded">
+ <div class="bg-danger text-light mt-1 center rounded bg-white">
         <% if @group.errors.any? %>
           <% @group.errors.full_messages.each do |error| %>
             <%= error %>
@@ -10,7 +10,7 @@
         <% end %>
      </div>
 
-<div class='custom-bg3 rounded text-light font-weight-bold'>
+<div class='custom-bg3 rounded text-light font-weight-bold bg-white'>
   <div class="pb-4">
     <%=form_for @group do |f|%>
 
@@ -34,7 +34,7 @@
   </div>  
 </div>
 
-<%= link_to "Back", :back, :class => 'btn-btn primary' %>
+<%= link_to "Back", :back, :class => 'btn btn-primary text-white'%>
 
   <div class="field">
     <%= form.label :icon, "Attach a New Icon"  %>

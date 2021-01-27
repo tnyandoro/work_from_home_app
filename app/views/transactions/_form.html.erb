@@ -1,5 +1,5 @@
 
-<div class='container rounded text-light font-weight-bold'>
+<div class='container rounded text-light font-weight-bold ol-12 col-md-5 center mb-5 shadow-sm custom-bg'>
   <div class="form-group">
 
       <%= form_with(model: transaction) do |form| %>
@@ -17,18 +17,18 @@
 
 
     <div class="field">
-      <%=form.label :select_group %>   
+      <%=form.label :select_group %>
       <%=select("transaction", "group_id", Group.all.collect {|g|[g.name, g.id] }, { include_blank: true })%>
     </div>
 
     <div class="field">
       <%= form.label :name  %>
-      <%= form.text_field :name %>
+      <%= form.text_field :name,  :class => 'bg-white text-dark font-weight-bold' %>
     </div>
 
     <div class="field">
       <%= form.label :amount%>
-      <%= form.number_field :amount%>
+      <%= form.number_field :amount, :class => 'bg-white text-dark font-weight-bold'%>
     </div>
 
     <div class="actions">

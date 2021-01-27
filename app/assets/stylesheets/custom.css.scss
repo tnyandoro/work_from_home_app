@@ -1,5 +1,6 @@
 $primary-color-dark: #3778c2;
 $primary-color: #5fb523;
+$primary-color-s: #a8f1d3;
 $primary-color-light: #989da3;
 $primary-color-text: #031804;
 $divider-color: #9ba5af;
@@ -85,7 +86,7 @@ body {
 }
 
 .custom-bg4 {
-  background-color: $primary-color !important;
+  background-color:$primary-color-s !important;
   border-radius: 10%;
   border: 1px solid #ffffff;
 
