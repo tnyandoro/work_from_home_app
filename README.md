@@ -6,9 +6,9 @@
 
 |Profile Page|Transactions Page
 |-|-|-|
-|![Home Page](https://user-images.githubusercontent.com/30318155/106055820-93a1ae00-60f6-11eb-9a4a-7e8486e898a7.png)|![All My Transactions](https://user-images.githubusercontent.com/30318155/106055949-bf249880-60f6-11eb-94e2-0440fd876fc9.png)
+|![Home Page](https://user-images.githubusercontent.com/30318155/106055820-93a1ae00-60f6-11eb-9a4a-7e8486e898a7.png)|![All My Transactions](https://user-images.githubusercontent.com/30318155/106055949-bf249880-60f6-11eb-94e2-0440fd876fc9.png)|![trans_details](https://user-images.githubusercontent.com/30318155/106056131-fd21bc80-60f6-11eb-917b-19f817c43bcd.png)
 |Groups Page|Group Details|
-|![](https://user-images.githubusercontent.com/30318155/105916220-47446880-6039-11eb-9923-32f936ca2ab7.png)|![group_detail](https://user-images.githubusercontent.com/30318155/105916488-a6a27880-6039-11eb-86b0-d0da965b6743.png)
+|![groups](https://user-images.githubusercontent.com/30318155/106056245-23475c80-60f7-11eb-9c2f-7c3d526b5fc4.png)|![group_detail](https://user-images.githubusercontent.com/30318155/106056362-4245ee80-60f7-11eb-912e-afd1999e1736.png)|
 
 
 ## Built With
