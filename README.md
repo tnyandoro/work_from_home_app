@@ -1,6 +1,6 @@
 # Work From Home app with Ruby on Rails
 
-> Group our Savings Transaction app is a web application that allows family members to create groups, make transactions towards saving for a goal for the entire family and/or can also make a personal transaction. Each transaction can belong to a group or it can be independent thus known as an external transaction. This is SITE is responsive.
+> Work from home App is a web-based app that allow Family members to set specific daily tasks or activities at home into groups and put in hours as transactions. The grouped transactions fall under All My transactions whilst personal hours spent transactions fall under External transactions..
 
 ### Screenshots
 
@@ -19,7 +19,7 @@
 
 ## Live Demo
 
-[Link](https://work-from-home-app.herokuapp.com/)/)
+[Work_from_home_transact](https://work-from-home-app.herokuapp.com/)
 
 ### Prerequisites
 
