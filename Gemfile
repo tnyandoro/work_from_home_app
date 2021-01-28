@@ -64,7 +64,6 @@ group :development do
   # Use postgresql as the database for Active Record
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'binding_of_caller'
-  gem 'n_1_finder', group: :development
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
