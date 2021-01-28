@@ -36,22 +36,26 @@ body {
   letter-spacing: -1px;
   font-weight: bold;
 }
-.title{
-  color: #ffffff;
+
+.title {
+  color: #fff;
   background-color: $primary-color;
 }
 
 #logo:hover {
   text-decoration: none;
 }
-.pf{
+
+.pf {
   font-size: 1.3em;
-  color: #000000;
+  color: #000;
 }
-.tiny{
+
+.tiny {
   font-size: 9px;
-  color: #DC3545;
+  color: #dc3545;
 }
+
 #page-content {
   flex: 1 0 auto;
   background-color: $primary-color-light;
@@ -77,8 +81,7 @@ body {
 .custom-bg2 {
   background-color: $primary-color !important;
   border-radius: 10%;
-  border: 1px solid #989DA3;
-  
+  border: 1px solid #989da3;
 }
 
 .custom-bg3 {
@@ -86,10 +89,9 @@ body {
 }
 
 .custom-bg4 {
-  background-color:$primary-color-s !important;
+  background-color: $primary-color-s !important;
   border-radius: 10%;
-  border: 1px solid #ffffff;
-
+  border: 1px solid #fff;
 }
 
 .icon {
@@ -136,10 +138,10 @@ form {
 
 .transition {
   &:hover {
-     background-color: #3e8e41;
-     color: white;   
-     margin: 4px 2px;
-     transition: 0.3s;
-     box-shadow: inset 0 0 30px 15px #49628a;
+    background-color: #3e8e41;
+    color: white;
+    margin: 4px 2px;
+    transition: 0.3s;
+    box-shadow: inset 0 0 30px 15px #49628a;
   }
 }
