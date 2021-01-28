@@ -1,12 +1,10 @@
-# frozen_string_literal: true
-
 class GroupsController < ApplicationController
   before_action :authenticate_user!
 
   # GET /groups
   # GET /groups.json
   def index
-    @groups = Group.all
+    @groups = Group.all.with_attached_icon.order('name ASC')
   end
 
   # GET /groups/1

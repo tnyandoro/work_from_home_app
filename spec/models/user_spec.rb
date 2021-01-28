@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'capybara/rails'
 
 RSpec.describe User, type: :model do

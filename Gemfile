@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 ruby '>=2.7.0'
 
@@ -51,6 +49,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '~> 3.29'
   gem 'rspec-rails', '~> 4.0', '>= 4.0.2'
+  gem 'rubocop-rails', require: false
   gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'
   gem 'shoulda-matchers', '~> 4.5', '>= 4.5.1'
   gem 'webdrivers'
@@ -65,6 +64,7 @@ group :development do
   # Use postgresql as the database for Active Record
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'binding_of_caller'
+  gem 'n_1_finder', group: :development
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
