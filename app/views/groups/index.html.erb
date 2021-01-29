@@ -5,14 +5,14 @@
 <div class="center">
   <% @groups.each do |group| %>
     <%= link_to group_path(group.id)do %>
-      <div class="card mb-3 center custom-bg rounded" style="max-width: 540px;">
+      <div class="card mb-3 center bg-white text-dark rounded" style="max-width: 540px;">
         <div class="row">
           <div class="col-3">
             <img src="<%=group.icon%>" class="icon" alt="">
           </div>
           <div class="col-8">
             <div class="card-body">
-            <h5 class="card-title text-light"><%= group.name %></h5>
+            <h5 class="card-title text-dark"><%= group.name %></h5>
             </div>
           </div>
         </div>

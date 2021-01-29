@@ -20,3 +20,5 @@ require("channels");
 // const imagePath = (name) => images(name, true)
 //= require jquery3
 //= require popper
+global.$ = jQuery;
+
