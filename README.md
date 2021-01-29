@@ -1,6 +1,6 @@
 # Work From Home app with Ruby on Rails
 
-> Work from home App is a web-based app that allow Family members to set specific daily tasks or activities at home into groups and put in hours as transactions. The grouped transactions fall under All My transactions whilst personal hours spent transactions fall under External transactions..
+> Work from home App is a web-based app that allow Family members to set specific daily tasks or activities at home in into single or grouped timed transactions. The grouped transactions fall under All My transactions whilst personal activities/transactions fall under External transactions.
 
 ### Screenshots
 
