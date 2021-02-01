@@ -279,6 +279,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.2)
+    spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -354,12 +355,13 @@ DEPENDENCIES
   shoulda-matchers (~> 4.5, >= 4.5.1)
   shrine (~> 3.3)
   simplecov
+  spring (~> 2.1, >= 2.1.1)
   turbolinks (~> 5)
   tzinfo-data
   wdm
   web-console (>= 4.1.0)
   webdrivers
-  webpacker (~> 5.0)
+  webpacker
 
 RUBY VERSION
    ruby 2.7.2p137
