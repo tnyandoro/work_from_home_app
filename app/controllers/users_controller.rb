@@ -5,6 +5,5 @@ class UsersController < ApplicationController
     @total_per_group = Transaction.total_per_group(current_user.id)
   end
 
-  def show
-  end
+  def show; end
 end
