@@ -10,7 +10,6 @@ class TransactionsController < ApplicationController
     else
       @tranb = Transaction.without_group(current_user.id).ordered_by_most_recent
       render 'page2'
-
     end
   end
 
@@ -41,13 +40,11 @@ class TransactionsController < ApplicationController
     end
   end
 
-
   def update
     @transaction = Transaction.find(params[:id])
     @transaction.update(transaction_param)
     redirect_to transaction_path(@transaction)
   end
-
 
   def destroy
     @transaction = Transaction.find(params[:id])
@@ -58,11 +55,9 @@ class TransactionsController < ApplicationController
 
   private
 
-
   def set_transaction
     @transaction = Transaction.find(params[:id])
   end
-
 
   def transaction_params
     params.require(:transaction).permit(:name, :amount, :group_id)
