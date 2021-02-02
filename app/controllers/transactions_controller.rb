@@ -41,16 +41,14 @@ class TransactionsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /transactions/1
-  # PATCH/PUT /transactions/1.json
+
   def update
     @transaction = Transaction.find(params[:id])
     @transaction.update(transaction_param)
     redirect_to transaction_path(@transaction)
   end
 
-  # DELETE /transactions/1
-  # DELETE /transactions/1.json
+
   def destroy
     @transaction = Transaction.find(params[:id])
     @transaction.destroy
@@ -60,12 +58,12 @@ class TransactionsController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
+
   def set_transaction
     @transaction = Transaction.find(params[:id])
   end
 
-  # Only allow a list of trusted parameters through.
+
   def transaction_params
     params.require(:transaction).permit(:name, :amount, :group_id)
   end
