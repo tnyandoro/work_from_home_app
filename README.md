@@ -91,7 +91,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - The UI Design credit goes to [Gregoire Vella at www.behance.net](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding)
-- This project was inspired by the [Microverse](https://www.notion.so/Group-our-transactions-ccea2b6642664540a70de9f30bdff4ce) for the capstone program
+- This project was inspired by the [Microverse](https:www.microverse.org) for the capstone program
 
 
 ## 📝 License
