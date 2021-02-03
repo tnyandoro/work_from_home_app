@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Work_from_home_transact](https://work-from-home-app.herokuapp.com/)
+[Work_from_home_transact](https://myhometrans.herokuapp.com//)
 
 ### Prerequisites
 
