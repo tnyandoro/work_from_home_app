@@ -67,7 +67,7 @@ Setup database with:
 
 ## Testing
 
-- Run Rspec 'rspec -f -d'
+- Run Rspec 'rspec'
 
 
 ## Authors
