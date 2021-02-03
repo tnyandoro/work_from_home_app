@@ -2,7 +2,7 @@ class GroupsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @groups = Group.all.with_attached_icon.order('name ASC')
+    @groups = Group.all.find_by_first_letter(params[:letter])
   end
 
   def show
@@ -20,15 +20,10 @@ class GroupsController < ApplicationController
   def create
     @group = Group.new(group_params)
     @group.user = current_user
-
-    respond_to do |format|
-      if @group.save
-        format.html { redirect_to @group, notice: 'Group was successfully created.' }
-        format.json { render :show, status: :created, location: @group }
-      else
-        format.html { render :new }
-        format.json { render json: @group.errors, status: :unprocessable_entity }
-      end
+    if @group.save
+      redirect_to groups_path, notice: 'You have successfully created a group.'
+    else
+      render :new
     end
   end
 
@@ -40,10 +35,7 @@ class GroupsController < ApplicationController
 
   def destroy
     @group.destroy
-    respond_to do |format|
-      format.html { redirect_to root_path, notice: 'Group was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to root_path, notice: 'Group was successfully destroyed.'
   end
 
   private
