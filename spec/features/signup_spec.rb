@@ -8,6 +8,6 @@ RSpec.describe 'Sign up Successfully', type: :feature do
     fill_in 'Password', with: 'Pineapple'
     fill_in 'Password confirmation', with: 'Pineapple'
     click_button 'Sign up'
-    expect(page).to have_text('Welcome To Home Transact')
+    expect(page).to have_text('Select To Home Transact')
   end
 end
