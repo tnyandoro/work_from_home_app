@@ -8,7 +8,7 @@ class TransactionsController < ApplicationController
       @trana = Transaction.with_group(current_user.id).includes(:group).ordered_by_most_recent
       render 'page1'
     else
-      @tranb = Transaction.without_group(current_user.id).ordered_by_most_recent
+      @tranb = Transaction.without_group(current_user.id).includes(:group).ordered_by_most_recent
       render 'page2'
     end
   end
