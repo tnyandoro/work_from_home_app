@@ -1,7 +1,6 @@
 class GroupsController < ApplicationController
   before_action :authenticate_user!
 
-
   def index
     @groups = Group.all.with_attached_icon.order('name ASC')
   end
