@@ -1,21 +1,18 @@
 class GroupsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_group, only: %i[show edit update destroy]
 
   def index
     @groups = Group.all.find_by_first_letter(params[:letter])
   end
 
-  def show
-    @group = Group.find(params[:id])
-  end
+  def show; end
 
   def new
     @group = Group.new
   end
 
-  def edit
-    @group = Group.find(params[:id])
-  end
+  def edit; end
 
   def create
     @group = Group.new(group_params)
@@ -29,22 +26,24 @@ class GroupsController < ApplicationController
 
   def update
     @group = Group.find(params[:id])
-    @group.update(group_params)
+    @group.update(group_param)
     redirect_to group_path(@group)
   end
 
   def destroy
+    @group = Group.find(params[:id])
     @group.destroy
-    redirect_to root_path, notice: 'Group was successfully destroyed.'
+    flash[:notice] = "Group successfully Delected"
+    redirect_to root_path
   end
-
-  private
 
   def set_group
     @group = Group.find(params[:id])
   end
 
-  def group_params
+  private
+
+  def group_param
     params.require(:group).permit(:name, :icon, :user_id)
   end
 end

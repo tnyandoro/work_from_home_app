@@ -1,5 +1,6 @@
 class TransactionsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_transaction, only: %i[show edit update destroy]
 
   # GET /transactions
   # GET /transactions.json
@@ -16,9 +17,7 @@ class TransactionsController < ApplicationController
 
   # GET /transactions/1
   # GET /transactions/1.json
-  def show
-    @transaction = Transaction.find(params[:id])
-  end
+  def show; end
 
   # GET /transactions/new
   def new
@@ -26,9 +25,7 @@ class TransactionsController < ApplicationController
   end
 
   # GET /transactions/1/edit
-  def edit
-    @transaction = Transaction.find(params[:id])
-  end
+  def edit; end
 
   # POST /transactions
   # POST /transactions.json
@@ -52,9 +49,10 @@ class TransactionsController < ApplicationController
   # DELETE /transactions/1
   # DELETE /transactions/1.json
   def destroy
-    Transaction.find(params[:id]).destroy!
-    flash.notice = "Transaction successfully Deleted"
-    redirect_to transaction_path
+    @transaction = Transaction.find(params[:id])
+    @transaction.destroy
+    flash[:notice] = "Transaction successfully Delected"
+    redirect_to root_path
   end
 
   private
