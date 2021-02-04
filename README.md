@@ -37,7 +37,7 @@ Postgres: >=13
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-1. Open Terminal.
+1. Open Terminal!.
 2. Navigate to your desired location to download the contents of this repository.
 3. Clone this repository: ```https://github.com/tnyandoro/work_from_home_app```
 4. Run ```cd work_from_home_app```.
