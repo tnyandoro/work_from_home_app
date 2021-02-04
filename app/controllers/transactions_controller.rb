@@ -1,6 +1,8 @@
 class TransactionsController < ApplicationController
   before_action :authenticate_user!
 
+  # GET /transactions
+  # GET /transactions.json
   def index
     if params[:view]
       @trana = Transaction.with_group(current_user.id).includes(:group).ordered_by_most_recent
@@ -8,24 +10,30 @@ class TransactionsController < ApplicationController
     else
       @tranb = Transaction.without_group(current_user.id).ordered_by_most_recent
       render 'page2'
+
     end
   end
 
-  def new
-    @transaction = Transaction.new
-  end
-
+  # GET /transactions/1
+  # GET /transactions/1.json
   def show
     @transaction = Transaction.find(params[:id])
   end
 
+  # GET /transactions/new
+  def new
+    @transaction = Transaction.new
+  end
+
+  # GET /transactions/1/edit
   def edit
     @transaction = Transaction.find(params[:id])
   end
 
+  # POST /transactions
+  # POST /transactions.json
   def create
-    @transaction = Transaction.new(transaction_param)
-    @transaction.author_id = current_user.id
+    @transaction = current_user.transactions.build(transaction_params)
     if @transaction.save
       redirect_to root_path, notice: 'New transaction was successfully created.'
     else
@@ -33,22 +41,31 @@ class TransactionsController < ApplicationController
     end
   end
 
+  # PATCH/PUT /transactions/1
+  # PATCH/PUT /transactions/1.json
   def update
     @transaction = Transaction.find(params[:id])
-    @transaction.update(transaction_param)
+    @transaction.update(transaction_params)
     redirect_to transaction_path(@transaction)
   end
 
+  # DELETE /transactions/1
+  # DELETE /transactions/1.json
   def destroy
-    @transaction = Transaction.find(params[:id])
-    @transaction.destroy
-    flash[:notice] = 'Transaction has been deleted'
-    redirect_to root_path
+    Transaction.find(params[:id]).destroy!
+    flash.notice = "Transaction successfully Deleted"
+    redirect_to transaction_path
   end
 
   private
 
-  def transaction_param
+  # Use callbacks to share common setup or constraints between actions.
+  def set_transaction
+    @transaction = Transaction.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def transaction_params
     params.require(:transaction).permit(:name, :amount, :group_id)
   end
 end

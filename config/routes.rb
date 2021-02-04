@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :groups, only: %i[index new create show edit update]
   resources :users, only: %i[index]
-  resources :transactions
+  resources :transactions, only: %i[index new create show edit update destroy]
 end

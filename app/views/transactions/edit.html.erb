@@ -1,6 +1,38 @@
-<h1>Editing Transaction</h1>
+<div class='container text-light font-weight-bold col-12 col-md-5 center mt-3 mb-3 custom-bg'>
+   <h1 class="custom-bg2 col-12 center">Edit Transaction</h1>
+</div>
 
-<%= render 'form', transaction: @transaction %>
+  <div class="bg-danger text-light mt-1 center rounded">
+      <% if @transaction.errors.any? %>
+        <% @transaction.errors.full_messages.each do |error| %>
+          <%= error %>
+        <% end %>
+      <% end %>
+  </div>
 
-<%= link_to 'Show', @transaction %> |
-<%= link_to 'Back', transactions_path %>
+  <div class='form-group custom-bg rounded text-light font-weight-bold mb-5 shadow-sm'>
+    <div class="pb-4">
+      <%=form_for @transaction do |f|%>
+        <div class="field ">
+          <%=f.label :name%>
+          <%=f.text_field :name , :class => 'bg-white'%>
+        </div>
+
+        <div class="field">
+          <%=f.label :amount%>
+          <%=f.number_field :amount , :class => 'bg-white'%>
+        </div>
+
+        <div class="field">
+          <%=f.label :select_group%>
+          <%=select("transaction", "group_id", Group.all.collect {|g|[g.name, g.id] }, { include_blank: true })%>
+        </div>
+
+        <div class="actions">
+          <%=f.submit "Update", :class => 'btn btn-primary text-white btn-lg'%>
+        </div>
+      <%end%>
+    </div>
+  </div>
+
+  <%= link_to "Back", :back, :class => 'btn btn-success text-white btn-lg' %>
