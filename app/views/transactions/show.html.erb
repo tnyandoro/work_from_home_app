@@ -1,17 +1,19 @@
-<div class="center mt-3">
+<div class="container bg-white">
+  <div class="center mt-3">
 
-      <div class='custom-bg2 d-flex justify-content-around rounded col-12 col-md-6 center mb-3 mt-3 pb-3 shadow-sm text-light'>
-        <h4 class ="mt-4 text-light font-weight-bold"><%= "Transaction Details" %></h4>
-      </div>
+        <div class='custom-bg d-flex justify-content-around rounded col-12 col-md-6 center mb-3 mt-3 pb-3 shadow-sm text-light'>
+          <h4 class ="mt-4 text-light font-weight-bold"><%= "Transaction Details" %></h4>
+        </div>
 
-  <div class ='jumbotron font_weight_bold bg-white'>
-    <p class='center'>Transaction Name: <%=@transaction.name%></p>
-    <p class='center'>Hours: <%=@transaction.amount%></p>
-    <p class='center'>Creator :<%=@transaction.author.name%></p>
-    <p class='center'>Date:<small><%=@transaction.created_at.strftime("%b %d, %Y")%></small></p>
+    <div class ='jumbotron font_weight_bold bg-white'>
+      <p class='center'>Transaction Name: <%=@transaction.name%></p>
+      <p class='center'>Hours: <%=@transaction.amount%></p>
+      <p class='center'>Creator :<%=@transaction.author.name%></p>
+      <p class='center'>Date:<small><%=@transaction.created_at.strftime("%b %d, %Y")%></small></p>
+    </div>
+
+    <p class="center mt-1"><%= link_to "Edit", edit_transaction_path(@transaction), :class => 'text-white font-weight-bold' %></p>
   </div>
 
-  <p class="center mt-1"><%= link_to "Edit", edit_transaction_path(@transaction), :class => 'text-white font-weight-bold' %></p>
-</div>
-
-<%= link_to "Back", :back, :class => 'text-white' %>
+  <%= link_to "Back", root_path, :class => 'btn btn-success text-white' %>
+ </div>
