@@ -1,0 +1,35 @@
+<div class='center mt-3'>
+  <button class='btn btn-primary col-12 col-md-4 center font-weight-bold text-light'>
+    <p class ="mt-3 "><h5>All My Transactions.</h5><p>
+  </button>
+  <div class= "d-flex justify-content-between rounded col-12 col-md-5 center mb-5 shadow-sm bg-white pt-2 mt-3">
+      <p class ="mt-3"><h4>Total Hours:</h4><h3><strong>Hrs <%= @trana.sum(:amount) %></strong></h3></p>
+  </div>
+</div>
+
+  <% @trana.each do |t| %>
+     <%= link_to transaction_path(t.id) do %> 
+       <div class="card mb-3 center  pf rounded " style="max-width: 540px;">
+        <div class="row">
+          <div class="col-3">
+            <img src="<%=t.group.icon%>" class="icon" alt="">
+          </div>
+          <div class="col-8">
+            <div class="card-body custom-bg-white text-dark">
+              <div class = "d-flex justify-content-between">
+                <h5 class="card-title text-dark"><%= t.name %></h5>
+                <p class="card-text text-dark"><h4>Hrs <%= t.amount %></h4></p>
+              </div>          
+              <p class="card-text d-flex justify-content-start"><small class="text-dark"><%=t.created_at.strftime("%b %d, %Y")%></small></p>
+            </div>
+          </div>
+        </div>
+      </div> 
+     <%end%>   
+  <%end%>
+
+<div class='action d-flex mb-3'>
+  <%= link_to 'Add new transaction', new_transaction_path, :class => 'center btn custom-bg2 btn-lg col-12 col-md-5 font-weight-bold text-white'%>
+</div>
+
+  <%= link_to "Back", root_path, :class => 'btn btn-primary  col-12 col-md-4 center font-weight-bold text-white' %>
