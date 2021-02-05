@@ -7,20 +7,6 @@
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
-    <div class="field form-group">
-      <div class="row">
-        <div class="col-sm-4">
-          <% if resource.avatar.attached? %>
-          <% else %>
-            <%= image_tag gravatar_image_url(current_user.email. size: 40), height: 20, witdh: 20. class "rounded-circle" %>
-          <% end %>
-        </div>
-        <div class="col-sm-8">
-          <%= f.file_field :avatar %><br />
-        </div>
-      </div>
-    </div>
-
     <div class="field">
       <%= f.label :name %><br />
       <%= f.text_field :name, autofocus: true%>
@@ -65,4 +51,4 @@
 
 </div>
 
-<%= link_to "Back", :back, :class => 'text-dark' %>
+<%= link_to "Back", root_path, :class => 'text-dark' %>
