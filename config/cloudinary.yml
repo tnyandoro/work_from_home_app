@@ -1,0 +1,18 @@
+development:
+  cloud_name: tendai
+  api_key: '517893662828569'
+  api_secret: Ps3hCCkXPQ1LHhFxkgWeo3dW_wg
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: tendai
+  api_key: '517893662828569'
+  api_secret: Ps3hCCkXPQ1LHhFxkgWeo3dW_wg
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: tendai
+  api_key: '517893662828569'
+  api_secret: Ps3hCCkXPQ1LHhFxkgWeo3dW_wg
+  enhance_image_tag: true
+  static_file_support: false
